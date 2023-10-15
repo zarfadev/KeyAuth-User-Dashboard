@@ -1,0 +1,100 @@
+body {
+    background-color: #2d3035;
+}
+
+.avatar {
+    font-size: 20px;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background: #555555;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar::after {
+    content: attr(data-label);
+    font-family: "Readex Pro", sans-serif;
+    color: #ffffff;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -130px !important;
+    margin-top: 0.125rem;
+}
+
+.navbar {
+    background-color: #22252a;
+}
+
+.nav-link,
+.dropdown-item {
+    color: #ffffff;
+}
+
+.badge.bg-danger {
+    background-color: #ff5252;
+}
+
+.dropdown-menu {
+    background-color: #2d3035;
+}
+
+.preview-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+}
+
+.preview-subject {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.text-muted {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.marcar-como-leido {
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.marcar-como-leido button {
+    background-color: #ff5252;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.task-item-content {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.task-subject {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dropdown-divider {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    border-top: 0px solid #40444b;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #fff;
+    background-color: #f2f4f51a !important;
+}

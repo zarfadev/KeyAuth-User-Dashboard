@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #09090d;
+            font-family: "Clobber Grotesk Light", sans-serif;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .color-bar {
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, rgb(69 65 65), rgb(193 62 62), rgb(146, 30, 30));
+        }
+
+        .loading-container {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .loading-text {
+            font-size: 3rem;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .loading-circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .loading-circle {
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgba(255, 255, 255, 0.6);
+            border-top: 3px solid rgba(255, 255, 255, 1);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-bar"></div>
+    <div class="loading-container">
+        <div class="loading-text">
+            <span style="color: white;">DESING <span style="color: rgb(193 62 62);">KEYAUTH</span></span>
+        </div>
+        <span style="color: white;">Design by Zarfala</span>
+        <div class="loading-circle-container">
+            <div class="loading-circle"></div>
+        </div>
+    </div>
+    <script>
+        setTimeout(function () {
+            var dominio = window.location.protocol + "//" + window.location.host;
+            window.location.href = dominio + "/auth/login";
+        }, 0);
+    </script>
+</body>
+
+</html>
