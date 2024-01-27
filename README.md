@@ -1,4 +1,4 @@
-# KeyAuth User Dashboard
+# KeyAuth User Dashboard -> Please star 🌟
 
 ![Dashboard Preview](https://cdn.discordapp.com/attachments/966140909580345434/1163231503459815424/image.png)
 
